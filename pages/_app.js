@@ -5,9 +5,6 @@ import Nav from "../components/Nav/Nav";
 import Aos from "aos";
 import "aos/dist/aos.css";
 
-const appId = "orHJtxnGnY74iB1GSiDdzmCPsgyvBOJs2Nl3mRAm";
-const serverUrl = "https://tssujh5928ml.usemoralis.com:2053/server";
-
 function MyApp({ Component, pageProps }) {
   useEffect(() => {
     Aos.init({ duration: 1000 });
@@ -15,7 +12,10 @@ function MyApp({ Component, pageProps }) {
 
   return (
     <>
-      <MoralisProvider appId={appId} serverUrl={serverUrl}>
+      <MoralisProvider
+        appId={process.env.NEXT_PUBLIC_APP_ID}
+        serverUrl={process.env.NEXT_PUBLIC_SERVER_URL}
+      >
         <Nav />
         <Component {...pageProps} />
       </MoralisProvider>
