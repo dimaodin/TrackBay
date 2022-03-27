@@ -1,8 +1,10 @@
 import { useState, useEffect } from "react";
 import { useMoralis } from "react-moralis";
+import styles from "./watchlist.module.scss";
 import PriceCard from "../components/PriceCard/PriceCard";
 import MarketHeader from "../components/MarketHeader/MarketHeader";
 import Footer from "../components/Footer/Footer";
+
 export async function getServerSideProps() {
   const res = await fetch(`https://api.coingecko.com/api/v3/coins`);
   const data = await res.json();
@@ -35,20 +37,20 @@ function WatchList({ data }) {
   }
 
   return (
-    <div className="bg-black  h-screen">
-      <div className="max-w-screen-lg m-auto text-white pt-10">
-        <h1 className="text-4xl text-center font-bold mb-8">My Watchlist 👀</h1>
+    <div className={styles.container}>
+      <div className={styles.wrap}>
+        <div className={styles.title}>
+          <h1>My Watchlist </h1>
+          <h2 className={styles.eyes}>👀</h2>
+        </div>
         {filteredData && <MarketHeader />}
         {filteredData &&
           filteredData.map((coin) => (
             <PriceCard coinData={coin} key={coin.id} />
           ))}
         {!isAuthenticated && (
-          <h1 className="text-center text-2xl font-bold text-purple-400">
-            Please log in
-          </h1>
+          <h1 className={styles.please}>Please log in 🎉</h1>
         )}
-
         <Footer />
       </div>
     </div>
