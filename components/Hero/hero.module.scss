@@ -17,13 +17,28 @@
 .ethereum {
   flex: 1;
   justify-self: center;
+
   img {
     width: 35rem;
+    animation: clockwise 10s linear infinite;
   }
   @media screen and (min-width: 280px) and (max-width: 1080px) {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
     img {
       width: 12.5rem;
     }
+  }
+}
+
+@keyframes clockwise {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
   }
 }
 
@@ -110,6 +125,7 @@
     }
   }
   @media screen and (min-width: 280px) and (max-width: 1080px) {
+
     h1 {
       font-size: 4rem;
     }
