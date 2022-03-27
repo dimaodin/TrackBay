@@ -6,6 +6,9 @@
   border-radius: 25px;
   padding: 2rem 2rem;
   margin-top: 8rem;
+  @media screen and (min-width: 280px) and (max-width: 1080px) {
+    margin-top: 4rem;
+  }
 }
 
 .title {
