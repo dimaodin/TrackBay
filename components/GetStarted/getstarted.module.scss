@@ -1,0 +1,103 @@
+@use "../../styles/var";
+
+.container {
+  align-self: center;
+  max-width: 1280px;
+  border-radius: 25px;
+  padding: 2rem 2rem;
+  margin-top: 8rem;
+}
+
+.title {
+  font-size: 3rem;
+  letter-spacing: -1px;
+  color: var(--primary-font);
+  margin-bottom: 4rem;
+  @media screen and (min-width: 280px) and (max-width: 1080px) {
+    font-size: 2.25rem;
+  }
+}
+
+.steps {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  gap: 2rem;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  @media screen and (min-width: 280px) and (max-width: 1080px) {
+    flex-direction: column;
+  }
+}
+
+.step {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 0.5rem;
+  text-align: center;
+  padding: 2.5rem 3rem;
+  background-color: var(--card-color);
+  box-shadow: 0 4px 8px 0 var(--third-color);
+  color: var(--primary-font);
+  border-radius: 20rem;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.5s ease-out;
+  &:hover {
+    background-image: var(--primary-gradient);
+    color: var(--white-text);
+    box-shadow: 0 4px 8px 0 var(--primary-color);
+    h1 {
+      color: var(--white-text);
+    }
+  }
+  h1 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    letter-spacing: -1px;
+    color: var(--primary-font);
+  }
+  svg {
+    width: 3.5rem;
+    height: 3.5rem;
+    margin-bottom: 1rem;
+  }
+  img {
+    width: 2rem;
+    height: 2rem;
+    padding: 0 0.5rem;
+  }
+}
+
+.arrow {
+  display: block;
+  margin-top: auto;
+  margin-bottom: auto;
+  padding-right: 0.25rem;
+  svg {
+    width: 2rem;
+    height: 2rem;
+    fill: var(--primary-font);
+  }
+  @media screen and (min-width: 280px) and (max-width: 1080px) {
+    display: none;
+  }
+}
+
+.mobileArrow {
+  display: none;
+  @media screen and (min-width: 280px) and (max-width: 1080px) {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    svg {
+      width: 2rem;
+      height: 2rem;
+      fill: var(--primary-font);
+    }
+  }
+}

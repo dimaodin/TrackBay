@@ -1,0 +1,122 @@
+@use "../../styles/var";
+
+.container {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-self: center;
+  background-color: var(--card-color);
+  box-shadow: 0 4px 8px 0 var(--third-color);
+  border-radius: 5rem;
+  padding: 2rem 2rem;
+  @media screen and (min-width: 280px) and (max-width: 1080px) {
+    flex-direction: column;
+    margin: 1rem 1.5rem 1rem 0;
+  }
+}
+
+.ethereum {
+  flex: 1;
+  justify-self: center;
+  img {
+    width: 35rem;
+  }
+  @media screen and (min-width: 280px) and (max-width: 1080px) {
+    img {
+      width: 12.5rem;
+    }
+  }
+}
+
+.heroText {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  flex: 2 2 0%;
+  margin-left: 2rem;
+  margin-top: 1rem;
+  h1 {
+    margin-top: 0.2rem;
+    font-family: "Syne", sans-serif;
+    letter-spacing: -0.1rem;
+    font-size: 8.5rem;
+    line-height: normal;
+    font-weight: 700;
+    background: -webkit-linear-gradient(
+        rgba(255, 255, 255, 0),
+        rgba(255, 255, 255, 0)
+      ),
+      var(--primary-gradient);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-transform: uppercase;
+  }
+  h2 {
+    font-size: 3rem;
+    line-height: normal;
+    letter-spacing: -1px;
+    font-weight: bold;
+    color: var(--primary-font);
+  }
+  h3 {
+    padding-left: 10px;
+    line-height: normal;
+    margin-top: -2rem;
+    font-size: 1.5rem;
+    color: var(--secondary-font);
+  }
+  button {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding: 1rem 2rem;
+    border-radius: 25px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: -1px;
+    color: var(--white-text);
+    position: relative;
+    border: 1px solid var(--primary-gradient);
+    box-shadow: 0 1px 12px 0 var(--primary-color);
+    border-radius: 5rem;
+    background-image: var(--primary-gradient);
+    transition: all 120ms ease-out 0s;
+    &:after {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      bottom: -5px;
+      left: 5%;
+      height: 110%;
+      width: 90%;
+      opacity: 0.8;
+      border-radius: 5rem;
+      background: inherit;
+      filter: blur(6px);
+      /* Transition for the magic */
+      -webkit-transition: all 0.2s;
+      -o-transition: all 0.2s;
+      transition: all 0.2s;
+    }
+    &:hover::after {
+      width: 100%;
+      bottom: 0px;
+      left: 0;
+    }
+    &:hover {
+      background-image: var(--primary-gradient-hover);
+      transition: ease-out 120ms;
+    }
+  }
+  @media screen and (min-width: 280px) and (max-width: 1080px) {
+    h1 {
+      font-size: 4.25rem;
+    }
+    h2 {
+      font-size: 2.5rem;
+    }
+    h3 {
+      margin-top: 0.5rem;
+    }
+  }
+}

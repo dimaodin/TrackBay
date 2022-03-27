@@ -1,0 +1,80 @@
+@use "../../styles/var";
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  color: rgb(0, 0, 0);
+  padding-left: 5rem; /* 80px */
+  padding-right: 5rem; /* 80px */
+  margin-bottom: 5rem;
+}
+
+.logo {
+  font-family: "Syne", sans-serif;
+  font-size: 1.5rem;
+  letter-spacing: -1px;
+  cursor: pointer;
+  h1 {
+    color: var(--primary-font);
+  }
+  @media screen and (min-width: 280px) and (max-width: 1080px) {
+    font-size: 1rem;
+  }
+}
+
+.menuWrap {
+  display: flex;
+  flex-direction: row;
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  img {
+    width: 2rem;
+    margin-right: 0.75rem;
+    @media screen and (min-width: 280px) and (max-width: 1080px) {
+      width: 1.5rem;
+    }
+  }
+  button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 1rem;
+    font-weight: 600;
+    letter-spacing: -1px;
+    padding: 1rem 2rem;
+    border-radius: 5rem;
+    border: none;
+    box-shadow: 0 1px 4px 0 var(--primary-color);
+    font-family: "Montserrat", sans-serif;
+
+    &:after {
+      position: absolute;
+      content: "👇";
+      font-size: 2.5rem;
+      opacity: 0;
+      transition: 0.4s ease-in-out;
+      font-weight: 300;
+    }
+    &:after {
+      transform: rotate(170deg);
+      right: 30px;
+      top: 50px;
+    }
+  }
+  button:hover {
+    transform: translateY(-5px);
+    background-image: var(--primary-gradient);
+    color: var(--white-text);
+    &:after {
+      opacity: 1;
+      top: 40px;
+    }
+  }
+}

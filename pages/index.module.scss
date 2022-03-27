@@ -1,0 +1,80 @@
+@use "../styles/var";
+
+.container {
+  background-color: var(--bg-color);
+  padding-bottom: 10px;
+  @media screen and (min-width: 280px) and (max-width: 1080px) {
+    width: 100vw;
+  }
+}
+
+.wrapper {
+  margin: auto;
+  background-color: var(--card-color);
+  box-shadow: 0 4px 8px 0 var(--third-color);
+  border-radius: 5rem;
+  @media screen and (min-width: 280px) and (max-width: 1080px) {
+    margin: 1rem 1.5rem 1rem 0;
+  }
+}
+
+.cards {
+  margin-left: 2rem;
+  margin-right: 2rem;
+  padding: 0 10rem;
+  @media screen and (min-width: 280px) and (max-width: 1080px) {
+    margin-left: 0;
+    margin-right: 0;
+    padding: 0 2rem;
+  }
+}
+
+.buttonWrap {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 4rem;
+  margin-bottom: 8rem;
+  padding-bottom: 4rem;
+  button {
+    padding: 1rem 2rem;
+    border-radius: 25px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: -1px;
+    color: var(--white-text);
+    position: relative;
+    border: 1px solid var(--primary-gradient);
+    box-shadow: 0 1px 12px 0 var(--primary-color);
+    border-radius: 5rem;
+    background-image: var(--primary-gradient);
+    transition: all 120ms ease-out 0s;
+    &:after {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      bottom: -5px;
+      left: 5%;
+      height: 110%;
+      width: 90%;
+      opacity: 0.8;
+      border-radius: 5rem;
+      background: inherit;
+      filter: blur(6px);
+      /* Transition for the magic */
+      -webkit-transition: all 0.2s;
+      -o-transition: all 0.2s;
+      transition: all 0.2s;
+    }
+    &:hover::after {
+      width: 100%;
+      bottom: 0px;
+      left: 0;
+    }
+    &:hover {
+      background-image: var(--primary-gradient-hover);
+      transition: ease-out 120ms;
+    }
+  }
+}
