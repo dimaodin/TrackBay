@@ -47,10 +47,10 @@ function GetStarted() {
           className={styles.step}
           data-aos="fade"
           data-aos-offset="-200"
-          data-aos-delay="300"
+          data-aos-delay="500"
         >
-          <FaCoins />
-          <h1>Add a cryptocurrency to your watchlist</h1>
+          <BsFillEyeFill />
+          <h1>Look for your cryptocurrencies</h1>
         </div>
         <div className={styles.arrow}>
           <BsArrowRight
@@ -70,10 +70,10 @@ function GetStarted() {
           className={styles.step}
           data-aos="fade"
           data-aos-offset="-200"
-          data-aos-delay="500"
+          data-aos-delay="300"
         >
-          <BsFillEyeFill />
-          <h1>Look for your cryptocurrencies</h1>
+          <FaCoins />
+          <h1>Add a cryptocurrency to your watchlist</h1>
         </div>
       </div>
     </div>
