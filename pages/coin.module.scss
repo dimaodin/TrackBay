@@ -279,7 +279,9 @@
   box-shadow: 0 4px 8px 0 var(--third-color);
   border-radius: 5rem;
   padding: 2.5rem 4rem;
-
+  @media screen and (min-width: 280px) and (max-width: 1080px) {
+    width: 75%;
+  }
   .statsTitle {
     font-size: 3.5rem;
     font-family: "Syne", sans-serif;
@@ -332,7 +334,9 @@
   padding: 2.5rem 4rem;
   margin-top: 2rem;
   border-radius: 5rem;
-
+  @media screen and (min-width: 280px) and (max-width: 1080px) {
+    width: 75%;
+  }
   .converterTitle {
     font-size: 3.5rem;
     letter-spacing: -1px;
