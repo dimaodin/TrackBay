@@ -341,7 +341,7 @@ function Coinid({ data }) {
                 data-aos-offset="-200"
                 data-aos-delay="200"
               >
-                <h1>1 Day</h1>
+                <h2>1 Day</h2>
                 <h1>{data.market_data.price_change_percentage_24h}%</h1>
               </div>
               <div
@@ -350,7 +350,7 @@ function Coinid({ data }) {
                 data-aos-offset="-200"
                 data-aos-delay="300"
               >
-                <h1>7 Days</h1>
+                <h2>7 Days</h2>
                 <h1>{data.market_data.price_change_percentage_7d}%</h1>
               </div>
               <div
@@ -359,7 +359,7 @@ function Coinid({ data }) {
                 data-aos-offset="-200"
                 data-aos-delay="400"
               >
-                <h1>1 Month</h1>
+                <h2>1 Month</h2>
                 <h1>{data.market_data.price_change_percentage_30d}%</h1>
               </div>
               <div
@@ -368,7 +368,7 @@ function Coinid({ data }) {
                 data-aos-offset="-200"
                 data-aos-delay="500"
               >
-                <h1>1 Year</h1>
+                <h2>1 Year</h2>
                 <h1>{data.market_data.price_change_percentage_1y}%</h1>
               </div>
             </div>
@@ -508,6 +508,12 @@ function Coinid({ data }) {
               data-aos-offset="-200"
               data-aos-delay="900"
             >
+              <img
+                src={data.image.large}
+                data-aos="fade"
+                data-aos-offset="-200"
+                data-aos-delay="100"
+              />
               <h1>{data.symbol}</h1>
               <input onChange={handleValueChange} value={inputValue} />
             </div>

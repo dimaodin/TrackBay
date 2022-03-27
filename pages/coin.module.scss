@@ -259,6 +259,19 @@
       margin-top: 0.75rem; /* 12px */
       margin-bottom: 0.75rem; /* 12px */
       border-top-width: 1px;
+      h2 {
+        font-size: 1.75rem;
+        opacity: 0.75;
+      }
+      h1 {
+        background: -webkit-linear-gradient(
+            rgba(255, 255, 255, 0),
+            rgba(255, 255, 255, 0)
+          ),
+          var(--primary-gradient);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
     }
   }
 }
@@ -301,6 +314,13 @@
   }
   .statData {
     font-size: 2.75rem;
+    background: -webkit-linear-gradient(
+        rgba(255, 255, 255, 0),
+        rgba(255, 255, 255, 0)
+      ),
+      var(--primary-gradient);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 }
 
@@ -329,14 +349,17 @@
     justify-content: center;
     align-items: center;
     gap: 2rem;
+    transition: all 0.5s ease;
     input {
       width: 100%;
       padding: 1rem 2rem;
       border-radius: 5rem;
+      border: 1px solid var(--third-color);
+
       &:focus {
         outline: none;
         color: var(--white-text);
-        background-color: var(--primary-color);
+        background: var(--primary-gradient);
       }
     }
   }
@@ -354,6 +377,11 @@
     align-items: center;
     margin-left: 1.25rem; /* 20px */
     margin-right: 1.25rem;
+    img {
+      width: 1.5rem;
+      height: 1.5rem;
+      margin-right: 0.5rem;
+    }
     h1 {
       margin-right: 0.5rem;
     }
