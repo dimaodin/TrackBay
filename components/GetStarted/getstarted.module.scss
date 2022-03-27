@@ -9,8 +9,9 @@
 }
 
 .title {
+  font-family: "Syne", sans-serif;
   font-size: 3rem;
-  letter-spacing: -1px;
+  letter-spacing: -2px;
   color: var(--primary-font);
   margin-bottom: 4rem;
   @media screen and (min-width: 280px) and (max-width: 1080px) {
