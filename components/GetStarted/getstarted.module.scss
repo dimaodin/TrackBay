@@ -11,7 +11,7 @@
 .title {
   font-family: "Syne", sans-serif;
   font-size: 3rem;
-  letter-spacing: -2px;
+  letter-spacing: -1px;
   color: var(--primary-font);
   margin-bottom: 4rem;
   @media screen and (min-width: 280px) and (max-width: 1080px) {
@@ -93,8 +93,8 @@
     text-align: center;
     align-items: center;
     justify-content: center;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
     svg {
       width: 2rem;
       height: 2rem;

@@ -25,7 +25,7 @@ function Hero() {
         </h3>
         <a href="#cta">
           <button data-aos="fade" data-aos-offset="-200" data-aos-delay="500">
-            START TRACKING 🔎
+            START TRACKING &nbsp;🔎
           </button>
         </a>
       </div>

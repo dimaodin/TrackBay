@@ -10,7 +10,7 @@ function MarketHeader() {
         data-aos-offset="-200"
         data-aos-delay="100"
       >
-        Crypto
+        Crypto 🪙
       </h1>
       <h1
         className={styles.priceText}
@@ -18,7 +18,7 @@ function MarketHeader() {
         data-aos-offset="-200"
         data-aos-delay="200"
       >
-        Price
+        Price 💲
       </h1>
       <h1
         className={styles.changeText}
@@ -26,7 +26,7 @@ function MarketHeader() {
         data-aos-offset="-200"
         data-aos-delay="300"
       >
-        24H Change
+        24H Change ⏱️
       </h1>
     </div>
   );
