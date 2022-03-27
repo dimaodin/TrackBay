@@ -10,7 +10,7 @@
   padding: 2rem 2rem;
   @media screen and (min-width: 280px) and (max-width: 1080px) {
     flex-direction: column;
-    margin: 1rem 1.5rem 1rem 0.75rem;
+    margin: 1rem 1.5rem 1rem 0.5rem;
   }
 }
 
@@ -125,9 +125,8 @@
     }
   }
   @media screen and (min-width: 280px) and (max-width: 1080px) {
-
     h1 {
-      font-size: 4rem;
+      font-size: 3.75rem;
     }
     h2 {
       font-size: 2rem;
