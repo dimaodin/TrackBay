@@ -13,7 +13,7 @@ function GetStarted() {
         data-aos-offset="-200"
         data-aos-delay="50"
       >
-        A few steps and thats it. 🔥
+        A few little steps and thats it.
       </div>
 
       <div className={styles.steps}>
