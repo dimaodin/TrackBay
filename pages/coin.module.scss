@@ -55,6 +55,7 @@
   h2 {
     font-size: 4rem;
     font-weight: 500;
+    text-transform: uppercase;
   }
   @media screen and (min-width: 280px) and (max-width: 1080px) {
     h1 {
@@ -258,7 +259,11 @@
       padding-top: 1rem;
       margin-top: 0.75rem; /* 12px */
       margin-bottom: 0.75rem; /* 12px */
+      border-bottom: 0.5px solid rgb(193, 193, 193);
       border-top-width: 1px;
+      &:last-child {
+        border-bottom: none;
+      }
       h2 {
         font-size: 1.75rem;
         opacity: 0.75;
@@ -302,7 +307,6 @@
     gap: 3rem;
     text-align: center;
     grid-template-columns: repeat(4, minmax(0, 1fr));
-
     @media screen and (min-width: 280px) and (max-width: 1080px) {
       grid-template-columns: repeat(1, minmax(0, 1fr));
     }
@@ -310,6 +314,12 @@
   .singleStat {
     display: flex;
     flex-direction: column;
+    border-bottom: 0.5px solid rgb(193, 193, 193);
+    @media screen and (min-width: 280px) and (max-width: 1080px) {
+      &:last-child {
+        border-bottom: none;
+      }
+    }
   }
   .statText {
     opacity: 0.75;

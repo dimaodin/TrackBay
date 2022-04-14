@@ -9,39 +9,14 @@
   margin-top: 10rem;
 }
 
-.nav {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  gap: 1rem;
-  margin-top: 5px;
-  transition: all 0.5 ease-in-out;
-
-  a {
-    background-color: var(--card-color);
-    color: var(--primary-color);
-    padding: 1rem 2rem;
-    border-radius: 25px;
-    font-size: 1.2rem;
-    font-weight: 600;
-    &:hover {
-      background-color: var(--primary-font);
-      color: var(--white-text);
-    }
-  }
-  @media screen and (min-width: 280px) and (max-width: 1080px) {
-    a {
-      padding: 1rem 1rem;
-      margin: 0 0.5rem;
-    }
-  }
-}
-
 .copyright {
   text-align: center;
   margin-top: 5px;
   p {
     font-size: 1rem;
     color: grey;
+  }
+  a {
+    color: var(--primary-color);
   }
 }

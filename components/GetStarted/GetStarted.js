@@ -1,6 +1,11 @@
 import React from "react";
 import styles from "./getstarted.module.scss";
-import { BsArrowRight, BsArrowDown, BsFillEyeFill } from "react-icons/bs";
+import {
+  BsArrowRight,
+  BsArrowDown,
+  BsFillEyeFill,
+  BsArrow90DegDown,
+} from "react-icons/bs";
 import { FaCoins } from "react-icons/fa";
 import { IoIosWallet } from "react-icons/io";
 
@@ -14,6 +19,9 @@ function GetStarted() {
         data-aos-delay="50"
       >
         A few little steps and thats it.
+        <div className={styles.firstArrow}>
+          <BsArrow90DegDown />
+        </div>
       </div>
 
       <div className={styles.steps}>

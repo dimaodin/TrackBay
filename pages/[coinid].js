@@ -499,7 +499,7 @@ function Coinid({ data }) {
             data-aos-offset="-200"
             data-aos-delay="800"
           >
-            Currency Converter 💶💷
+            💷 Currency Converter 💶
           </h1>
           <form>
             <div

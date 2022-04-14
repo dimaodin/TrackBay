@@ -21,6 +21,21 @@
     font-size: 2.25rem;
     margin-left: 1rem;
   }
+  .firstArrow {
+    display: inline-block;
+    transform: rotateY(180deg);
+    margin-left: 0.75rem;
+    svg {
+      width: 2rem;
+      height: 2rem;
+    }
+    @media screen and (min-width: 280px) and (max-width: 1080px) {
+      svg {
+        width: 1.75rem;
+        height: 1.75rem;
+      }
+    }
+  }
 }
 
 .steps {
