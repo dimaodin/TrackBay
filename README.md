@@ -14,7 +14,7 @@
 
 ## :construction_worker: Installation
 
-***You need to install [Node.js](https://nodejs.org/en/download/) and [YARN](https://yarnpkg.com/) first, then in order to clone the project via HTTPS, run this command:***
+***You need to install [Node.js](https://nodejs.org/en/download/) and [NPM](https://npmjs.com/) first, then in order to clone the project via HTTPS, run this command:***
 
 At the root of the Project run:
 
