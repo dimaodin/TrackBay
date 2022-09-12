@@ -54,5 +54,4 @@ Check out the [contributing](https://github.com/dimaodin/TrackBay/blob/main/CONT
 
 <br>
 
-##### Made with love by [Dima Odintsov](https://github.com/DimaOdin) 💜🚀
-###### Make sure to check my [portfolio](https://dimaodin.com/).
+##### Made with love by [Dima Odintsov](https://github.com/DimaOdin), make sure to check my [portfolio](https://dimaodin.com/) 💜🚀
